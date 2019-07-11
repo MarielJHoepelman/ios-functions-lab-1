@@ -65,6 +65,19 @@ Input: `min2(a:1, b:2)`
 
 Output: `1`
 
+```swift
+func min2(a: Int, b: Int) -> Int {
+    var min = 0
+    if a < b {
+        min = a
+    } else if a > b {
+        min = b
+    }
+    return min
+}
+print(min2(a: 1, b: 2))
+```
+
 
 ## Question 4
 
