@@ -12,8 +12,11 @@ let itemCost = 45.0
 let nyTax = 0.08775
 
 func totalWithTax() {
-
+    let tax = (itemCost * nyTax)
+    let total = (itemCost + tax)
+    print(total)
 }
+totalWithTax()
 ```
 
 Then, modify the function you implemented to have a return type of `Int`, and use an external name that looks more readable. Function calls should look something like "total cost of the item after tax"
