@@ -37,6 +37,21 @@ if todaysTemperature <= 40 {
 }
 ```
 
+```swift
+func HowIsTheWeather (t: Int) -> String {
+    var temp = ""
+    if t <= 40 {
+        temp = "It's cold out."
+    } else if t <= 85 {
+        temp = "It's really warm."
+    } else {
+        temp = "Weather is moderate."
+    }
+    return temp
+}
+print(HowIsTheWeather(t: 72))
+```
+
 
 ## Question 3
 
