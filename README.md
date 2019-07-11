@@ -91,6 +91,13 @@ Input: `lastDigit(12345)`
 
 Output: `5`
 
+```swift
+func lastDigit(_ number: Int) -> Int {
+    let last = (number % 10)
+    return last
+}
+print(lastDigit(12345))
+```
 
 ## Question 5
 
