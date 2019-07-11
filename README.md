@@ -103,6 +103,18 @@ print(lastDigit(12345))
 
 Write a function that takes in any two positive integers and return the sum.
 
+```swift
+func sum2(a: Int, b: Int) -> Int {
+    var sum = 0
+    if a > 0 && b > 0 {
+        sum = (a+b)
+    }
+return sum
+}
+print(sum2(a: 10, b: 2))
+//prints 0 if any int is negative. refactor this!
+```
+
 
 ## Question 6
 
