@@ -458,6 +458,17 @@ Using your function, print how many characters are in myString:
 
 `let myString = "Swift is a new programming language for iOS, OS X, watchOS, and tvOS apps that builds on the best of C and Objective-C, without the constraints of C compatibility."`
 
+```swift
+func characterCounter(inputString: String) {
+    var counter = 0
+    for c in inputString where c != " " {
+        counter += 1
+        }
+    print(counter)
+}
+characterCounter(inputString: myString)
+```
+
 
 ## Question 21
 
