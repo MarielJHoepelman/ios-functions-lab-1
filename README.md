@@ -157,6 +157,23 @@ Make a calculator function that takes in three parameters (two numbers and one o
 
 Operator parameter: (+, -, x, /)
 
+```swift
+func calculator(a: Int, b: Int, o: Character) -> Int {
+    var result = 0
+    if o == "+" {
+        result = a + b
+    } else if o == "-" {
+        result = a - b
+    } else if o == "x" {
+        result = a * b
+    } else if o == "/" {
+        result = a / b
+    }
+    return result
+}
+print(calculator(a: 10, b: 2, o: "/"))
+```
+
 
 ## Question 8
 
