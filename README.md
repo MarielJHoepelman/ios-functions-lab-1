@@ -268,6 +268,15 @@ Input: `reverse([1, 2, 3])`
 
 Output: `[3, 2, 1]`
 
+```swift
+var arrayInput = [1, 2, 3]
+
+func reverse(array: [Int]) -> [Int] {
+    return arrayInput.reversed()
+}
+print(reverse(array: arrayInput))
+```
+
 
 ## Question 13
 
