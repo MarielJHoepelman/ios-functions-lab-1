@@ -480,6 +480,21 @@ Input:
 let testString = "This is a test string for your code"
 let targetCharacter: Character = "i"
 ```
+```swift
+func characterCounter(stringInput: String, characterInput: Character) -> Int {
+    var freqC = [Character: Int]()
+
+    for c in stringInput {
+        if freqC.keys.contains(c) {
+            freqC[c] = freqC[c]! + 1
+        } else {
+            freqC[c] = 1
+        }
+    }
+    return freqC[characterInput] ?? 0
+}
+print(characterCounter(stringInput: testString, characterInput: targetCharacter))
+```
 
 Sample output: `3`
 
