@@ -438,6 +438,17 @@ largestNumber(array: myArray)
 
 If you haven't already done so, write a function that takes in an Int and returns whether that number is even or odd. Use that function to print a sentence that states whether the largest Int in `myArray` is even or odd.
 
+```swift
+func evenOrOdd(number: Int) {
+    if number % 2 == 0 {
+        print("\(number) is an even number.")
+    } else {
+        print("\(number) is an odd number.")
+    }
+}
+evenOrOdd(number: 532)
+
+```
 
 ## Question 20
 
