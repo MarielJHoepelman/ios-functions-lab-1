@@ -617,6 +617,18 @@ Example:
 Input:  `unwrap(arr: [nil, 7, 4, nil, 43, 11, nil, 2])`
 
 Output: `[7, 4, 43, 11, 2]`
+```swift
+func unwrap(array: [Int?]) -> [Int] {
+    var result:[Int] = []
+    for number in array {
+        if let unwrapNumber = number {
+            result.append(unwrapNumber)
+        }
+    }
+    return result
+}
+print(unwrap(array: arr))
+```
 
 
 ## Question 29
