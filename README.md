@@ -402,6 +402,17 @@ Using your new function, write code that prints out whether `dieRoll` is even or
 
 `let dieRoll = Int(arc4random_uniform(6) + 1)`
 
+```swift
+func evenOrOdd(number: Int) {
+    if number % 2 == 0 {
+        print("Number is even.")
+    } else {
+        print("Number is odd.")
+    }
+}
+evenOrOdd(number: dieRoll)
+```
+
 
 ## Question 19
 
