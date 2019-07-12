@@ -548,11 +548,21 @@ Output: `4`
 //Explanation: 2, 4, 6, 9 are unique in the array. Every other number is not unique.
 
 ```swift
-
 let inputArray2 = [3,1,4,1,3,2,6,1,9]
 func unique(array: [Int]) -> [Int] {
-    let resultArray = Set(inputArray2).sorted()
-return resultArray
+    var resultArray: [Int] = []
+    var dictionary: [Int:Int] = [:]
+    for n in array {
+        if dictionary.keys.contains(n) {
+            dictionary[n] = dictionary[n]! + 1 //if key is found add one to the value.
+        } else {
+            dictionary[n] = 1 //initialize an entry in my frequency dictionary with the value 1.
+        }
+    }
+    for (key, value) in dictionary where value == 1 {
+        resultArray.append(key)
+    }
+    return resultArray
 }
 print(unique(array: inputArray2))
 ```
