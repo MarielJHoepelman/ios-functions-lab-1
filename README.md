@@ -240,6 +240,13 @@ Input: `first(3)`
 
 Output: `[1, 2, 3]`
 
+```swift
+func first(_ n: Int) -> [Int] {
+    return Array(1...n)
+}
+print(first(10))
+```
+
 
 ## Question 11
 
