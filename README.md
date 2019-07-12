@@ -385,7 +385,15 @@ print(highest(dicNames: scores))
 ## Question 17
 
 Write a function that determines if a value is inside of array.
+```swift
+let arrayInput =  ["Eliel", "Mariel", "Mariangel", "Sophia","Mushroom"]
+var valueInput = "Mariel"
 
+func inside(array: [String], value: (String)) -> Bool {
+    return(array.contains(value))
+}
+print(inside(array: arrayInput, value: "Mariel"))
+```
 
 ## Question 18
 
