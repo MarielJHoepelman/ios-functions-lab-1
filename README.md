@@ -183,9 +183,13 @@ Write a function so that it will print out **total cost after tip.**
 let mealCost = 45
 let tipPercentage = 0.15
 
-//Write your code below
-
+func totalWithTip() -> Int {
+    let tip = (Double(mealCost) * tipPercentage)
+    let total = (Double(mealCost) + tip)
+    return Int(Double(total))
+}
 let myFinalCost = totalWithTip() //Fill in the arguments
+print(myFinalCost)
 ```
 
 Write a function that will print out **total cost after tip and tax.**
