@@ -509,6 +509,16 @@ Output: `4`
 
 //Explanation: 2, 4, 6, 9 are unique in the array. Every other number is not unique.
 
+```swift
+
+let inputArray2 = [3,1,4,1,3,2,6,1,9]
+func unique(array: [Int]) -> [Int] {
+    let resultArray = Set(inputArray2).sorted()
+return resultArray
+}
+print(unique(array: inputArray2))
+```
+
 
 ## Question 24
 
@@ -537,6 +547,19 @@ Example:
 Input:  `filterOdd(arr: [1, 2, 3, 4, 5, 6, 7, 8])`
 
 Output: `[2, 4, 6, 8]`
+
+```swift
+func filterOdd(array: [Int]) -> [Int] {
+var filtered: [Int] = []
+    for n in array {
+        if n % 2 == 0 {
+            filtered.append(n)
+        }
+    }
+    return filtered.sorted()
+}
+print(filterOdd(array: arr))
+```
 
 
 ## Question 27
