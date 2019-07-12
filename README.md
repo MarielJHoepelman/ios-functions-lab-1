@@ -512,6 +512,29 @@ let targetCharacters: [Character] = ["a","e","i","o","u"]
 
 Output: `13`
 
+```swift
+func characterCounter(stringInput: String, characterInput: [Character]) -> Int {
+    var freqC = [Character: Int]()
+
+    for c in stringInput {
+        if freqC.keys.contains(c) {
+            freqC[c] = freqC[c]! + 1 //if key is found add one to the value.
+        } else {
+            freqC[c] = 1 //initialize an entry in my frequency dictionary with the value 1.
+        }
+    }
+
+    var totalCharacters = 0
+    for (key, value) in freqC { //for each key value pair in dictionary ...
+        if  characterInput.contains(key) { //if character array contains the key...
+            totalCharacters += value //add the value of the key to the counter
+        }
+    }
+    return totalCharacters  //returns the sum of all appearances of characters in character input.
+    }
+print(characterCounter(stringInput: inputString, characterInput: targetCharacters))
+```
+
 
 ## Question 23
 
