@@ -282,6 +282,28 @@ print(reverse(array: arrayInput))
 
 Write a function that prints out the most frequently appearing Int in an array of Int.
 
+```swift
+var someRepeatsAgain = [1,2,3,5,3,5,8,4,7,2,4,8,8,5,6,5,5]
+func repeatsIdentifier (array: [Int]) -> Int {
+    var freqDict = [Int: Int]()
+    for num in array {
+        if freqDict.keys.contains(num) {
+            freqDict[num] = freqDict[num]! + 1
+        } else {
+            freqDict[num] = 1
+        }
+    }
+    var resultTuple:(Int,Int) = (0,0) // Using a tuple to store the most repeated key and its value
+    for (key, value) in freqDict {
+        if value > resultTuple.1 { // Compare with the value with the tuple value
+            resultTuple = (key, value)
+        }
+    }
+    return resultTuple.0 // Return tuple key
+}
+print(repeatsIdentifier(array: someRepeatsAgain))
+```
+
 
 ## Question 14
 
