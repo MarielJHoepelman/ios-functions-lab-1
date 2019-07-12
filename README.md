@@ -571,6 +571,20 @@ Input: `doubleIt(arr: [1, 2, 3, 4])`
 
 Output: `[2, 4, 6, 8]`
 
+```swift
+func doubleIt(array: [Int]) -> [Int] {
+    var doubles: [Int] = []
+    var nTimes2 = 0
+    for number in array {
+        nTimes2 = (number * 2)
+        doubles.append(nTimes2)
+        nTimes2 = 0
+    }
+    return doubles
+}
+print(doubleIt(array: arr))
+```
+
 
 Then write a function called `multiplyBy` that takes an array of ints and an int n that will return the array with all the elements multiplied by n.
 
@@ -578,6 +592,21 @@ Example:
 Input:  `multiplyIt(arr: [1, 2, 3, 4], n: 4)`
 
 Output:  `[4, 8, 12, 16]`
+
+```swift
+func multiplyIt(array: [Int], number: Int) -> [Int] {
+    var result: [Int] = []
+    var timesN = 0
+    for n in array {
+        timesN = (n * number)
+        result.append(timesN)
+        timesN = 0
+    }
+    return result
+}
+print(multiplyIt(array: arr, number: 4))
+```
+
 
 
 ## Question 28
