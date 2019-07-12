@@ -422,6 +422,20 @@ Using your function from the first step, use String interpolation to print a sen
 
 `let myArray = [3,5,1,3,532,1,4,91,20,30,92,143]`
 
+```swift
+
+func largestNumber(array: [Int]) {
+    var largest = 0
+    for n in array {
+        if n > largest {
+            largest = n
+        }
+    }
+    print("The largest number in array is \(largest).")
+}
+largestNumber(array: myArray)
+```
+
 If you haven't already done so, write a function that takes in an Int and returns whether that number is even or odd. Use that function to print a sentence that states whether the largest Int in `myArray` is even or odd.
 
 
