@@ -197,9 +197,15 @@ Write a function that will print out **total cost after tip and tax.**
 ```swift
 let taxPercentage = 0.09
 
-//Write your code below
+func totalWithTipAndTax() -> Int {
+    let tip = (Double(mealCost) * tipPercentage)
+    let tax = (Double(mealCost) * taxPercentage)
+    let total = (Double(mealCost) + tip + tax)
+    return Int(Double(total))
+}
 
-let myFinalCostWithTipAndTax = totalWithTipAndTax() //Fill in the arguments in function
+let myFinalCostWithTipAndTax = totalWithTipAndTax()
+print(myFinalCostWithTipAndTax)
 ```
 
 
