@@ -340,6 +340,19 @@ Input: `[1: "hi", 5: "bye:]`
 
 Output: `["hi": 1, "bye": 5]`
 
+```swift
+let inputDic = [1: "hi", 5:"bye"]
+
+func flipper(dictionary: [Int:String]) -> [String:Int] {
+    var flippedDictionary: [String:Int] = [:]
+    for (key, value) in dictionary {
+        flippedDictionary[value] = key
+    }
+    return flippedDictionary
+}
+print(inputDic)
+```
+
 
 ## Question 16
 
