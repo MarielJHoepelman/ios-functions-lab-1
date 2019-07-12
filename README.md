@@ -287,6 +287,27 @@ Write a function that prints out the most frequently appearing Int in an array o
 
 Write a function that sums all the even indices of an array of Ints.
 
+```swift
+var arrayOfInts = [2, 2]
+
+func sumOfInts (array: [Int]) -> Int {
+    var evenNumbers: [Int] = []
+    for num in array {
+        if num % 2 == 0 {
+            evenNumbers.append(num)
+        }
+    }
+    var sumOfInts = 0
+    for num in evenNumbers {
+        sumOfInts = sumOfInts + num
+    }
+    return sumOfInts
+}
+
+print(sumOfInts(array: arrayOfInts))
+
+```
+
 
 ## Question 15
 
