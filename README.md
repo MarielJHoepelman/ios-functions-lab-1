@@ -129,6 +129,27 @@ Write a function takes in any number grade and returns a corresponding letter gr
 | 65 - 69 | D |
 | Below 65 | F |
 
+```swift
+
+func gradeConverter(_ number: Int) -> String {
+var grade = ""
+    if number == 100 {
+        grade = "A+"
+    } else if number >= 90 && number <= 99 {
+        grade = "A"
+    } else if number >= 80 && number <= 89 {
+        grade = "B"
+    } else if number >= 70 && number <= 79 {
+        grade = "C"
+    } else if number >= 65 && number <= 69 {
+        grade = "D"
+    } else {
+        grade = "F"
+    }
+return grade
+}
+print(gradeConverter(65))
+```
 
 ## Question 7
 
