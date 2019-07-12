@@ -363,6 +363,25 @@ Input: `["Person 1": 83, "Person 2": 74, "Person 3": 82]`
 
 Output: `"Person 3"`
 
+```swift
+func highest(dicNames: [String:Int]) -> String {
+    var highestScore = 0
+        for (_, value) in dicNames {
+            if value > highestScore {
+                highestScore = value
+            }
+    }
+    var secondPerson = ""
+    for (key, value) in dicNames {
+        if value < highestScore && value != highestScore {
+            secondPerson = key
+        }
+    }
+    return secondPerson
+}
+print(highest(dicNames: scores))
+```
+
 ## Question 17
 
 Write a function that determines if a value is inside of array.
