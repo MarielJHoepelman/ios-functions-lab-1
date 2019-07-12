@@ -218,6 +218,15 @@ Input: `repeatPrint(message: "+", count: 10)`
 
 Output: `++++++++++`
 
+```swift
+func repeatPrint(message: String, n: Int) -> Void {
+    for _ in 0..<n{
+        print(message)
+    }
+}
+repeatPrint(message: "I'm tired.", n: 10)
+```
+
 
 ## Question 10
 
