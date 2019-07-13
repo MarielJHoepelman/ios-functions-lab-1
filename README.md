@@ -577,6 +577,20 @@ Input: `let binaryArray = [1,0,1,1,1,0,1]`
 
 Output: `93`
 
+```swift
+let binaryArray = [1,0,1,1,1,0,1]
+
+func binaryToDecimal(array:[Int]) -> Int {
+    var decimal = 0
+    for (i, n) in array.reversed().enumerated() { // i = index, n = index value.
+        decimal += (n * Int(pow(Double(2), Double(i))))
+        //decimal = previous value of decimal + number * 2^i 
+    }
+    return decimal
+}
+print(binaryToDecimal(array: binaryArray))
+```
+
 ## Question 25
 
 Write a function named `timeDifference`. It takes as input four numbers that represent two times in a day and returns the difference in minutes between them. The first two parameters `firstHour` and `firstMinute` represent the hour and minute of the first time. The last two `secondHour` and `secondMinute` represent the hour and minute of the second time. All parameters should have external parameter names with the same name as the local ones.
