@@ -717,6 +717,24 @@ Input:  `countBools(arr: [true, true, false, true, false, true])`
 
 Output: `[false: 2, true: 4]`
 
+```swift
+let arr = [true, true, false, true, false, true]
+func countBools(array: [Bool]) -> [Bool:Int] {
+    var dictionary: [Bool:Int] = [:]
+
+    for i in array {
+        if dictionary.keys.contains(i) {
+            dictionary[i] = dictionary[i]! + 1
+        } else {
+            dictionary[i] = 1
+        }
+    }
+
+    return dictionary
+}
+print(countBools(array: arr))
+```
+
 
 ## Question 30
 
