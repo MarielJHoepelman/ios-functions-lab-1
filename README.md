@@ -745,7 +745,24 @@ Input:  `countCharacters(str: "Hello, World!")`
 
 Output: `["H": 1, "r": 1, "!": 1, "e": 1, "o": 2, "l": 3, ",": 1, " ": 1, "W": 1, "d": 1]`
 
+```swift
+let str = "Hello, World!"
+func characterCounter(stringInput: String) -> [Character:Int] {
+    var freqC = [Character: Int]()
 
+    for c in stringInput {
+        if freqC.keys.contains(c) {
+            freqC[c] = freqC[c]! + 1 //if key is found add one to the value.
+        } else {
+            freqC[c] = 1
+        }
+    }
+
+    return freqC
+}
+print(characterCounter(stringInput: str))
+
+```
 ## Question 31
 
 Write a function that takes this dictionary of baseball teams by ID and returns an array of tuples that contain each team's ID and name.
