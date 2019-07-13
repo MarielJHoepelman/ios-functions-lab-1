@@ -600,6 +600,21 @@ Input: `timeDifference(firstHour: 12, firstMinute: 3, secondHour: 13, secondMinu
 
 Output: `67`
 
+```swift
+var firstHour = 12
+var firstMinute = 3
+var secondHour = 13
+var secondMinute = 10
+
+func timeDifference(firstHour: Int, firstMinute: Int, secondHour: Int, secondMinute: Int) -> Int {
+    let differenceHours = (secondHour - firstHour) * 60
+    let differenceMinutes = (secondMinute - firstMinute)
+
+    return (differenceHours + differenceMinutes)
+}
+print(timeDifference(firstHour: firstHour, firstMinute: firstMinute, secondHour: secondHour, secondMinute: secondMinute))
+```
+
 
 ## Question 26
 
