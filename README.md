@@ -778,6 +778,13 @@ Output: `[(.0 1003, .1 "Rays"), (.0 1001, .1 "Mets"), (.0 1004, .1 "Marlins"), (
 ## Question 32
 
 Write a function that checks if a String is a [Palindrome](https://en.wikipedia.org/wiki/Palindrome)
+```swift
+let word = "racecar"
+func palindrome(input: String) -> Bool {
+    return  String(input) == String(input.reversed())
+}
+print(palindrome(input: word))
+```
 
 
 ## Question 33
