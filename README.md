@@ -790,6 +790,16 @@ print(palindrome(input: word))
 ## Question 33
 
 Write a function that checks if a String is a [pangram](https://en.wikipedia.org/wiki/Pangram)
+```swift
+var InputString = "The quick brown fox jumped over the lazy dog"
+
+func pangram(input: String) -> Bool {
+    let abcSet = Set("abcdefghijklmnopqrstuvwxyz")
+    let stringSet = Set(InputString)
+    return (abcSet.isSubset(of: stringSet))
+}
+print(pangram(input: InputString))
+```
 
 
 ## Question 34
